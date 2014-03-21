@@ -1,31 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>query._</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport"
+	      content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>query._</title>
+
+	<script src="js/jquery.2.0.js"></script>
+	<!--<script src="js/jquery.onepage-scroll.js"></script>-->
+	<script src="js/jquery.scrollScript.js"></script>
 
 
-     
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
 
-    <script src="js/jquery.2.0.js"></script>
+	<script>
+		$(document).ready(function(){
 
-    <script type="text/javascript">
-        document.write("<script src=\"js\/jquery._.js?" + (new Date()).getTime() + "\"><\/script>");
-        document.write("<link rel=\"stylesheet\" href=\"css\/style.css?" + (new Date()).getTime() + "\" type=\"text/css\">");
-    </script>
 
+
+			var script = [
+				{
+					on: function(){
+
+					},
+					off: function(){
+
+					},
+					trigger: 122
+
+				},
+				{
+					on: function(){
+
+					},
+					off: function(){
+
+					},
+					trigger: 322
+
+				}
+			]
+
+			var a = new scrollScript(script);
+		});
+
+	</script>
 
 </head>
-<body>   
- 
-<h1>PLUGIN</h1>
+<body>
+<div class="wrapper">
+	<div class="main">
+		<section class="page1">
+			123
+		</section>
+		<section class="page2">
+			345
+		</section>
 
- 
-
-<script type="text/javascript">
-    $('#selector')._();
-</script>
-
+		<section class="page3">
+			678
+		</section>
+	</div>
+</div>
 </body>
 </html>
 
