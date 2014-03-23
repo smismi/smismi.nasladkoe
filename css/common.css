@@ -54,6 +54,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-test {
+.test {
   color: #235678;
+}
+
+.page2 .page_item {
+  position: absolute;
+  border: 1px solid red;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.page2 .page_item.first {
+  left: 0%;
+  width: 20%;
+}
+.page2 .page_item.second {
+  left: 20%;
+  width: 20%;
+}
+.page2 .page_item.third {
+  left: 40%;
+  width: 20%;
+}
+.page2 .page_item.fourth {
+  left: 60%;
+  width: 20%;
+}
+.page2 .page_item.fivth {
+  left: 80%;
+  width: 20%;
+}
+.page2 .page_item figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s ease-out;
+}
+.page2 .page_item:hover figcaption {
+  position: absolute;
+  border: 1px solid #f3faff;
+}
+.page2 .page_item.totop figcaption {
+  top: 100%;
+}
+.page2 .page_item.totop:hover figcaption {
+  top: 0;
+}
+.page2 .page_item.toright figcaption {
+  left: -100%;
+}
+.page2 .page_item.toright:hover figcaption {
+  left: 0;
+}
+.page2 .page_item.toleft figcaption {
+  left: 100%;
+}
+.page2 .page_item.toleft:hover figcaption {
+  left: 0;
+}
+.page2 .page_item.tobottom figcaption {
+  top: -100%;
+}
+.page2 .page_item.tobottom:hover figcaption {
+  top: 0;
 }

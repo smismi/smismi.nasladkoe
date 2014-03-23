@@ -1,0 +1,93 @@
+.page2 {
+
+	.page_item {
+		position: absolute;
+		border: 1px solid red;
+		top: 0;
+		bottom:0;
+		overflow: hidden;
+
+		$list: "first", "second", "third", "fourth", "fivth";
+		@include pageitems($list);
+
+		figcaption {
+			position: absolute;
+			top:0;
+			left:0;
+			right: 0;
+			bottom: 0;
+ 			transition: all 0.5s ease-out;
+
+		}
+
+		&:hover {
+			figcaption {
+				position: absolute;
+				border: 1px solid #f3faff;
+
+			}
+
+		}
+
+		&.totop {
+			figcaption {
+				top:100%;
+
+			}
+
+			&:hover {
+				figcaption {
+					top: 0;
+				}
+
+			}
+		}
+
+		&.toright {
+			figcaption {
+				left: -100%;
+
+			}
+
+			&:hover {
+				figcaption {
+					left: 0;
+				}
+
+			}
+		}
+		&.toleft {
+			figcaption {
+				left: 100%;
+
+			}
+
+			&:hover {
+				figcaption {
+					left: 0;
+				}
+
+			}
+		}
+		&.tobottom {
+			figcaption {
+				top: -100%;
+
+			}
+
+			&:hover {
+				figcaption {
+					top: 0;
+				}
+
+			}
+		}
+	}
+
+
+
+
+
+
+
+}
