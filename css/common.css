@@ -85,8 +85,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 80%;
   width: 20%;
 }
+.page2 .page_item.first figcaption {
+  background: #337825;
+}
+.page2 .page_item.second figcaption {
+  background: #f3faff;
+}
+.page2 .page_item.third figcaption {
+  background: #ffaf3f;
+}
+.page2 .page_item.fourth figcaption {
+  background: #fa3fff;
+}
+.page2 .page_item.fivth figcaption {
+  background: #3faf2a;
+}
 .page2 .page_item figcaption {
   position: absolute;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -105,19 +121,62 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 .page2 .page_item.toright figcaption {
   left: -100%;
+  right: auto;
 }
 .page2 .page_item.toright:hover figcaption {
   left: 0;
 }
 .page2 .page_item.toleft figcaption {
   left: 100%;
+  right: auto;
 }
 .page2 .page_item.toleft:hover figcaption {
   left: 0;
 }
 .page2 .page_item.tobottom figcaption {
   top: -100%;
+  bottom: auto;
+  height: 100%;
 }
 .page2 .page_item.tobottom:hover figcaption {
   top: 0;
+}
+.page2 .page_item.tofront .image {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  height: 200px;
+  margin-top: -100px;
+  transition: all 0.1s ease-out;
+}
+.page2 .page_item.tofront .image img {
+  width: 100%;
+}
+.page2 .page_item.tofront:hover .image {
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-top: 0;
+  opacity: 0;
+}
+.page2 .page_item.tofront .image2 {
+  position: absolute;
+  top: 50%;
+  transition: all 0.4s ease-out;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-top: 0;
+  opacity: 0;
+}
+.page2 .page_item.tofront .image2 img {
+  width: 100%;
+}
+.page2 .page_item.tofront:hover .image2 {
+  width: 100%;
+  left: 0;
+  height: 200px;
+  margin-top: -100px;
+  opacity: 1;
 }
