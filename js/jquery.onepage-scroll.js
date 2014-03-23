@@ -219,7 +219,7 @@
 						el.moveDown();
 					});
 
-				$(document).bind('mousewheel DOMMouseScroll', function (event) {
+				$(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) { //smismi // add MozMousePixelScroll for FF27 for OSX
 					event.preventDefault();
 					var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 					init_scroll(event, delta);
@@ -304,7 +304,7 @@
 		}
 
 
-		$(document).bind('mousewheel DOMMouseScroll', function (event) {
+		$(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function (event) {
 			event.preventDefault();
 			var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 			if (!$("body").hasClass("disabled-onepage-scroll")) init_scroll(event, delta);

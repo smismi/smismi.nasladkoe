@@ -60,7 +60,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .page2 .page_item {
   position: absolute;
-  border: 1px solid red;
   top: 0;
   bottom: 0;
   overflow: hidden;
@@ -107,11 +106,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 .page2 .page_item:hover figcaption {
   position: absolute;
-  border: 1px solid #f3faff;
 }
 .page2 .page_item.totop figcaption {
   top: 100%;
@@ -148,6 +149,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   left: 0;
   height: 200px;
   margin-top: -100px;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 .page2 .page_item.tofront .image img {
@@ -163,7 +167,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .page2 .page_item.tofront .image2 {
   position: absolute;
   top: 50%;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 12;
   left: 50%;
   width: 0;
   height: 0;
